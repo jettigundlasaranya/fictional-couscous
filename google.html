@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        svg{
+            position: absolute;
+            width: 50vw;
+            height:50vw;
+            top: 200px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        rect{
+            fill: none;
+            stroke:green;
+            stroke-width: 10px;
+            vector-effect:non-scaling-stroke;
+        }
+        rect,path{
+                fill: none;
+                stroke:#000;
+                stroke-width: 4px;
+                vector-effect:non-scaling-stroke;
+                stroke-dasharray:4px;
+                animation: dask 5s linear  alternate infinite;
+                shape-rendering: grometricPrecision;
+                stroke-dashoffset: 4px;
+                }
+        rect{
+            stroke-width: 2px;
+        }
+        @keyframes stroke {
+            to{
+                stroke-dashoffset:1000;
+            }
+         }
+    </style>
+</head>
+<body>
+    <svg viewbox='0 0 40' preserveAspectRatio='none'>
+       <!-- <style>
+        rect,path{
+            fill: none;
+            stroke:#000;
+            stroke-width: 4px;
+            vector-effect:non-scaling-stroke;
+            stroke-dasharray:4px;
+            animation: stroke 0.25 linear infinite;
+            shape-rendering: grometricPrecision;
+            stroke-dashoffset: 8px;
+            }
+    rect{
+        stroke-width: 2px;
+    }
+    @keyframes stroke {
+        to{
+            stroke-dashoffset:20px;
+        }
+     }
+       </style> -->
+        <path d='M 20,20 L 40, 40' />
+        <path d='M 20,20 L 00, 40' />
+        <path d='M 20,20 L 40, 0' />
+        <path d='M 20,20 L 0, 0' />
+        <rect width="40" height="40" />
+    </svg> 
+</body>
+</html>

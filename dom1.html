@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <form action="">
+   Enter <input type="number" id="sample"><br><br>
+   <input type="button" value="click here" onclick="numbers()">
+   <br>
+   Male<input type="radio" name="gender" value="male">
+   Female<input type="radio" name="gender" value="female">
+   other<input type="radio" name="gender" value="other">
+   <input type="button" value="count" onclick="total()">
+</form>
+ <script type="text/javascript">
+  function numbers(){
+     var number = document.getElementById("sample").value
+      alert(number*10); 
+     // document.write(numbers*10);
+       }
+  function total(){
+   var genders=document.getElementsByTagName("gender");
+      alert("total genders" +genders.length);
+  }
+</script>
+</body>
+</html>
