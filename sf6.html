@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-attachment: fixed;
+            background-color:yellow;
+            color:blue;
+            text-align:center;
+        }
+        #maindiv{
+            background-image:url(sa1.jpg);
+        }
+        fieldset{
+            border:5px solid green;
+	    	border-radius:20px 0 20px 0;
+        }
+        fieldset legend
+	    {
+	      border: inherit;
+	      background:linear-gradient(45deg,black,green,yellow);
+	      border-radius:0px 20px 0px 20px;
+	      font-size:30px;
+	      }
+        input[type='text']
+	    {
+	    	border-radius:30px;
+	    	padding:5px;
+            color:purple;
+	    }
+        input[type='radio']
+	    {
+	    	border-radius:30px;
+	    	padding:5px;
+	    }
+        input[type='phone']
+	    {
+	    	border-radius:30px;
+	    	padding:5px;
+            color:purple;
+	    }
+        input[type='mail']
+	    {
+	    	border-radius:30px;
+	    	padding:5px;
+            color:purple;
+	    }	
+    </style>
+</head>
+<body>
+  <h1>Online Application Form</h1> 
+  <div id="maindiv">
+  <div>
+      <form>
+        <fieldset>
+            <legend>
+               Full Details 
+            </legend>
+        <table>
+            <tr>
+              <td><label>Fullname</label></td>
+              <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+               <td><label>Gender</label></td>           
+               <td><input type="radio" name="name" value="Male">male</td>
+               <td><input type="radio" name="name" value="Female">Female</td>
+               <td><input type="radio" name="name" value="Others">Others</td>
+            </tr>
+            <tr>
+                <td><label>Date of birth</label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label> Mobile NUmber</label></td>
+                <td><input type="phone" name="phone" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label>Mobile NumberRepeat</label></td>
+                <td><input type="phone" name="phone" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label> EmailId(Uppercase)</label></td>
+                <td><input type="mail" name="mail"></td>
+            </tr>
+            <tr>
+                <td><label> EmailId(Repeat)</label></td>
+                <td><input type="mail" name="mail"></td>
+            </tr>
+        </table>
+    </fieldset>
+      </form>
+   <form>
+    <fieldset>
+        <legend>Education Details</legend>
+        <table>
+         <tr>
+             <td><label>10th</label></td>
+             <td><input type="check" name="name" value="SSlC(state board)">SSIC</td>
+             <td><input type="check"  name="name" value="CBSC">CBSC</td>
+        </tr> 
+        <tr>
+           <td><label> Year Of passedOut</label></td>
+           <td><input type="date" name="name"></td>
+           <td><label> Aggrigate %</label></td>
+           <td><input type="text" name="name"></td>
+        </tr>  
+         <tr>
+           <td><label>12th</label></td>
+           <td><label> Aggrigate %</label></td>
+           <td><input type="text" name="name"></td>
+           <td><label> Year Of passedOut</label></td>
+           <td><input type="date" name="name"></td>
+         </tr>
+         <tr>
+            <td><label>B.tech</label></td>
+            <td><label> Aggrigate %</label></td>
+            <td><input type="text" name="name"></td> 
+            <td><label> Year Of passedOut</label></td>
+           <td><input type="date" name="name"></td>
+         </tr>
+        </table>
+    </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+          <table> 
+            <tr>
+                <td><label>Do you have aadhar card</label></td>
+                <td><input type="radio" value="Yes">Yes</td>
+                <td><input type="radio" value="No">No</td>
+            </tr>
+            <tr>
+                <td><label>Do you have passport</label></td>
+                <td><input type="radio" value="Yes">Yes</td>
+                <td><input type="radio" value="No">No</td>
+            </tr>
+            <tr>
+                <td><label>Do you have pan card</label></td>
+                <td><input type="radio" value="Yes">Yes</td>
+                <td><input type="radio" value="No">No</td>
+            </tr>
+        
+            <tr>
+                <td><label>Ready To Relocate</label></td>
+                <td><input type="radio" value="Yes">Yes</td>
+                <td><input type="radio" value="No">No</td>
+            </tr>
+            <tr>
+                <td><label>Is Prefered Location</label></td>
+                <td><input type="radio" value="Bangalore">Bangalore</td>
+                <td><input type="radio" value="Pune">Pune</td>
+                <td><input type="radio" value="Mumbai">Mumbai</td>
+            </tr>
+            </table>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Address</legend>
+            <table>
+             <tr>
+                 <td><label>Father'sName/Mother'sName</label></td>
+                 <td><input type="text"></td>
+             </tr>
+             <tr>
+                <td><label>House Number</label></td>
+                <td><input type="text"></td>
+                <td><label>Street No</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Area Name</label></td>
+                <td><input type="text"></td>
+                <td><label>Pincode</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>city</label></td>
+                <td><input type="text"></td>
+                <td><label>State</label></td>
+                <td><input type="text"></td>
+            </tr>
+            </table>
+        </fieldset>
+    </form>
+  </div> 
+  </div>
+</body>
+</html>
